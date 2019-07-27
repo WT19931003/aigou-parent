@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou-basic-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou-basic-parent/aigou-basic-uitls" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou-eureka-client-config-server8000" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou-eureka-client-zuul9527" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou-euruka-server7001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou-plat-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou-plat-parent/aigou-plat-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou-plat-parent/aigou-plat-service" charset="UTF-8" />
+  </component>
+</project>

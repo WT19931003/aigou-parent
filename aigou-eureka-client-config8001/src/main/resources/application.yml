@@ -1,0 +1,19 @@
+server:
+  port: 8001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-7001:7001/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: aigou-config-server
+spring:
+  application:
+    name: aigou-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/WT19931003/aigou-config.git  #git文件地址
+          username: WT19931003
+          password: wutao1312818**

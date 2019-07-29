@@ -3,7 +3,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka-7001:7001/eureka/
+      defaultZone: http://eureka-7001:7001/eureka/  #注册中心地址
   instance:
     prefer-ip-address: true
     instance-id: aigou-config-server
@@ -14,6 +14,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/WT19931003/aigou-config.git  #git文件地址
-          username: WT19931003
-          password: wutao1312818**
+          uri: https://github.com/WT19931003/aigou-config.git  #github文件地址
+          username: WT19931003  #github 账号
+          password: wutao1312818** #GitHub 密码

@@ -2,9 +2,9 @@ spring:
   cloud:
     config:
       uri: http://localhost:8001 #配置服务器
-      label: master
-      name: zuul-application
-      profile: dev
+      label: master #分支
+      name: zuul-application #gitHUB上面文件名
+      profile: dev  #开发环境
 eureka:
   client:
     service-url:

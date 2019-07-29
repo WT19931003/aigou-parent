@@ -11,9 +11,9 @@
   <modules>
     <module>aigou-euruka-server7001</module>
     <module>aigou-eureka-client-zuul9527</module>
-    <module>aigou-eureka-client-config-server8000</module>
     <module>aigou-plat-parent</module>
     <module>aigou-basic-parent</module>
+    <module>aigou-eureka-client-config8001</module>
   </modules>
 
   <name>aigou-parent</name>

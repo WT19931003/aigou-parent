@@ -8,6 +8,6 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl implements IUserService {
     @Override
     public User findAll() {
-        return new User(1L,"123456","123456");
+        return new User(1L,"wutao","123456");
     }
 }

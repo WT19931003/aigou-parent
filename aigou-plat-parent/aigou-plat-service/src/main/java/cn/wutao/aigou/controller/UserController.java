@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
-@RequestMapping("/user")
 @RestController
 public class UserController {
 
@@ -17,9 +16,9 @@ public class UserController {
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     public AjaxResult login(@RequestBody User user){
 
-        System.out.println("用户名："+user.getName()+"   密码："+user.getPassword());
-        if (!StringUtils.isEmpty(user.getName())&&!StringUtils.isEmpty(user.getPassword())){
-            if ("wutao".equals(user.getName()) && "123456".equals(user.getPassword())){
+        System.out.println("用户名："+user.getUsername()+"   密码："+user.getPassword());
+        if (!StringUtils.isEmpty(user.getUsername())&&!StringUtils.isEmpty(user.getPassword())){
+            if ("wutao".equals(user.getUsername()) && "123456".equals(user.getPassword())){
 
                 User all = userService.findAll();
                 return AjaxResult.me().setSuccess(true).setMsg("登录成功").setData(all);

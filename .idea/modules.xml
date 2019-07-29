@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/aigou-basic-parent/aigou-basic-parent.iml" filepath="$PROJECT_DIR$/aigou-basic-parent/aigou-basic-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/aigou-basic-parent/aigou-basic-uitls/aigou-basic-uitls.iml" filepath="$PROJECT_DIR$/aigou-basic-parent/aigou-basic-uitls/aigou-basic-uitls.iml" />
-      <module fileurl="file://$PROJECT_DIR$/aigou-eureka-client-config-server8000/aigou-eureka-client-config-server8000.iml" filepath="$PROJECT_DIR$/aigou-eureka-client-config-server8000/aigou-eureka-client-config-server8000.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aigou-eureka-client-config8001/aigou-eureka-client-config8001.iml" filepath="$PROJECT_DIR$/aigou-eureka-client-config8001/aigou-eureka-client-config8001.iml" />
       <module fileurl="file://$PROJECT_DIR$/aigou-eureka-client-zuul9527/aigou-eureka-client-zuul9527.iml" filepath="$PROJECT_DIR$/aigou-eureka-client-zuul9527/aigou-eureka-client-zuul9527.iml" />
       <module fileurl="file://$PROJECT_DIR$/aigou-euruka-server7001/aigou-euruka-server7001.iml" filepath="$PROJECT_DIR$/aigou-euruka-server7001/aigou-euruka-server7001.iml" />
       <module fileurl="file://$PROJECT_DIR$/aigou-parent.iml" filepath="$PROJECT_DIR$/aigou-parent.iml" />

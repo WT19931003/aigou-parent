@@ -9,7 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>aigou-eureka-client-config-server8000</artifactId>
+    <artifactId>aigou-common-parent</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>aigou-common-interface</module>
+        <module>aigou-common-service</module>
+    </modules>
 
 
 </project>

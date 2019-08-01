@@ -1,5 +1,6 @@
 package cn.wutao.aigou.service;
 
+import cn.wutao.aigou.AjaxResult;
 import cn.wutao.aigou.domain.ProductType;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -17,4 +18,6 @@ public interface IProductTypeService extends IService<ProductType> {
 
     //树菜单
     List<ProductType> loadTypeTree();
+
+    void genHomePage();
 }

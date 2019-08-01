@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="aigou-basic-generator" />
         <module name="aigou-basic-uitls" />
+        <module name="aigou-common-interface" />
+        <module name="aigou-common-service" />
         <module name="aigou-eureka-client-config8001" />
         <module name="aigou-eureka-client-zuul9527" />
         <module name="aigou-euruka-server7001" />
@@ -21,6 +23,9 @@
       <module name="aigou-basic-generator" target="1.8" />
       <module name="aigou-basic-parent" target="1.8" />
       <module name="aigou-basic-uitls" target="1.8" />
+      <module name="aigou-common-interface" target="1.8" />
+      <module name="aigou-common-parent" target="1.8" />
+      <module name="aigou-common-service" target="1.8" />
       <module name="aigou-eureka-client-config-server8000" target="1.8" />
       <module name="aigou-eureka-client-config8001" target="1.8" />
       <module name="aigou-eureka-client-zuul9527" target="1.8" />

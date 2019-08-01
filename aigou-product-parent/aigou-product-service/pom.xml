@@ -11,6 +11,7 @@
 
     <artifactId>aigou-product-service</artifactId>
     <dependencies>
+
         <dependency>
             <groupId>cn.wutao.aigou</groupId>
             <artifactId>aigou-product-interface</artifactId>

@@ -86,4 +86,16 @@ public class ProductTypeController {
         IPage<ProductType> iPage = productTypeService.page(page);
         return new PageList<ProductType>(iPage.getTotal(),iPage.getRecords());
     }
+
+    @PostMapping("/goHome")
+    public AjaxResult genHomePage(){
+
+        try {
+            productTypeService.genHomePage();
+            return AjaxResult.me().setSuccess(true).setMsg("good");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return AjaxResult.me().setSuccess(false).setMsg("no:"+e.getMessage());
+        }
+    }
 }

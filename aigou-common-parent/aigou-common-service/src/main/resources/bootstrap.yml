@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8001 #配置服务器
+      label: master
+      name: common-application
+      profile: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-7001:7001/eureka/ #告诉服务提供者要把服务注册到哪儿 #单机环境
+server:
+  max-http-header-size: 10240000

@@ -3,13 +3,20 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/aigou-basic-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou-basic-parent/aigou-basic-generator" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/aigou-basic-parent/aigou-basic-uitls" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/aigou-eureka-client-config-server8000" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/aigou-eureka-client-config8001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/aigou-eureka-client-zuul9527" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/aigou-euruka-server7001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/aigou-plat-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/aigou-plat-parent/aigou-plat-interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/aigou-plat-parent/aigou-plat-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou-product-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou-product-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou-product-parent/aigou-product-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou-product-parent/aigou-product-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou-product-parent/aigou-product-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigou-product-parent/aigou-product-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aigouproductparent" charset="UTF-8" />
   </component>
 </project>

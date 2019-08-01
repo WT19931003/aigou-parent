@@ -9,6 +9,8 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/aigou-eureka-client-config-server8000/pom.xml" />
+        <option value="$PROJECT_DIR$/aigou-product-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/aigouproductparent/pom.xml" />
       </set>
     </option>
   </component>

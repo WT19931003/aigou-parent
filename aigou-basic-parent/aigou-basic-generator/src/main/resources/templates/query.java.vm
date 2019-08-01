@@ -1,0 +1,10 @@
+package cn.wutao.aigou.query;
+
+import cn.wutao.aigou.BaseQuery;
+/**
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+public class ${table.entityName}Query extends BaseQuery{
+}

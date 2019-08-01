@@ -1,4 +1,4 @@
-package cn.wutao.aigou.swagger;
+package cn.wutao.aigou.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

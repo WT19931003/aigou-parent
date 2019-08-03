@@ -36,6 +36,11 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
 
     @Autowired
     private ProductTypeMapper productTypeMapper;
+
+    /**
+     * redis缓存
+     * @return
+     */
     @Override
     public List<ProductType> loadTypeTree() {
         //第一次：查询redis
@@ -53,6 +58,9 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
         return productTypes;
     }
 
+    /**
+     * 静态页面生成
+     */
     @Override
     public void genHomePage() {
         Map<String,Object> map = new HashMap<>();
@@ -88,6 +96,7 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
         staticPageClient.genStaticPage(map);*/
     }
 
+    //树形菜单
     private List<ProductType> loop() {
 
         List<ProductType> productTypes = productTypeMapper.selectList(null);
@@ -103,8 +112,15 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
             if (productType2.getPid() == 0){
                 list.add(productType2);
             }else {
+                //处理空数组
                 ProductType parent = map.get(productType2.getPid());
-                parent.getChildren().add(productType2);
+
+                List<ProductType> children = parent.getChildren();
+                if (children==null){
+                    children = new ArrayList<>();
+                }
+                children.add(productType2);
+                parent.setChildren(children);
             }
         }
 

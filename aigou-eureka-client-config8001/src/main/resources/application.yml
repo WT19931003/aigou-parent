@@ -10,9 +10,13 @@ eureka:
 spring:
   application:
     name: aigou-config-server
+  #profiles:
+  #    active: native #本地配置
   cloud:
     config:
       server:
+        #native:  #本地配置
+        #  search-locations: E:/git-repositort/aigou/config/aigou-config
         git:
           uri: https://github.com/WT19931003/aigou-config.git  #github文件地址
           username: WT19931003  #github 账号

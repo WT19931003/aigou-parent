@@ -86,7 +86,9 @@ public class ProductType extends Model<ProductType> {
     private ProductType productType;
 
     @TableField(exist = false)
-    private List<ProductType> children = new ArrayList<>();
+    private List<ProductType> children;
+
+
 
     public ProductType getProductType() {
         return productType;

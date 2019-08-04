@@ -71,8 +71,6 @@ public class Brand extends Model<Brand> {
     @TableField(exist = false)
     private ProductType productType;
 
-    @TableField(exist = false)
-    private List<ProductType> children = new ArrayList<>();
 
     public ProductType getProductType() {
         return productType;
@@ -82,13 +80,6 @@ public class Brand extends Model<Brand> {
         this.productType = productType;
     }
 
-    public List<ProductType> getChildren() {
-        return children;
-    }
-
-    public void setChildren(List<ProductType> children) {
-        this.children = children;
-    }
 
     public Long getId() {
         return id;
@@ -189,7 +180,6 @@ public class Brand extends Model<Brand> {
                 ", sortIndex=" + sortIndex +
                 ", logo='" + logo + '\'' +
                 ", productType=" + productType +
-                ", children=" + children +
                 '}';
     }
 }

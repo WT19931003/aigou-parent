@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 
 /**
  * <p>
@@ -49,6 +50,7 @@ public class Product extends Model<Product> {
     /**
      * 商品类型ID
      */
+
     private Long productTypeId;
 
     /**
@@ -57,11 +59,16 @@ public class Product extends Model<Product> {
     @TableField("onSaleTime")
     private Long onSaleTime;
 
+    @TableField(exist = false)
+    private String onSaleTimeStr;
     /**
      * 下架时间
      */
     @TableField("offSaleTime")
     private Long offSaleTime;
+
+    @TableField(exist = false)
+    private String offSaleTimeStr;
 
     private Long brandId;
 
@@ -121,6 +128,29 @@ public class Product extends Model<Product> {
     @TableField("badCommentCount")
     private Integer badCommentCount;
 
+    //
+    @TableField(exist = false)
+    private ProductExt productExt;
+
+
+    //格式化上下架返回时间
+    public String getOnSaleTimeStr() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd HH-MM-SS");
+        return this.onSaleTime==null ? " ": dateFormat.format(this.onSaleTime);
+    }
+
+    public String getOffSaleTimeStr() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd HH-MM-SS");
+        return this.onSaleTime==null ? " ": dateFormat.format(this.onSaleTime);
+    }
+
+    public ProductExt getProductExt() {
+        return productExt;
+    }
+
+    public void setProductExt(ProductExt productExt) {
+        this.productExt = productExt;
+    }
 
     public Long getId() {
         return id;

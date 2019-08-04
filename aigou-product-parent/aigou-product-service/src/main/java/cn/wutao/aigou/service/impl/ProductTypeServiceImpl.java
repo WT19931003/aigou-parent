@@ -99,31 +99,29 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
     //树形菜单
     private List<ProductType> loop() {
 
-        List<ProductType> productTypes = productTypeMapper.selectList(null);
+        List<ProductType> productTypes = baseMapper.selectList(null);
 
         List<ProductType> list = new ArrayList<>();
 
         Map<Long,ProductType> map = new HashMap<>();
-        for (ProductType productType : productTypes) {
-            map.put(productType.getId(),productType );
+
+        for (ProductType pt : productTypes) {
+            map.put(pt.getId(),pt);
         }
-
-        for (ProductType productType2 : productTypes) {
-            if (productType2.getPid() == 0){
-                list.add(productType2);
-            }else {
-                //处理空数组
-                ProductType parent = map.get(productType2.getPid());
-
+        //循环
+        for (ProductType productType : productTypes) {
+            if(productType.getPid()==0){
+                list.add(productType);
+            }else{
+                ProductType parent = map.get(productType.getPid());
                 List<ProductType> children = parent.getChildren();
-                if (children==null){
+                if(children==null){
                     children = new ArrayList<>();
                 }
-                children.add(productType2);
+                children.add(productType);
                 parent.setChildren(children);
             }
         }
-
         return list;
     }
 }

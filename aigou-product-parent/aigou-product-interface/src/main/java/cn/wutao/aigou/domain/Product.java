@@ -135,13 +135,13 @@ public class Product extends Model<Product> {
 
     //格式化上下架返回时间
     public String getOnSaleTimeStr() {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd HH-MM-SS");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         return this.onSaleTime==null ? " ": dateFormat.format(this.onSaleTime);
     }
 
     public String getOffSaleTimeStr() {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd HH-MM-SS");
-        return this.onSaleTime==null ? " ": dateFormat.format(this.onSaleTime);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        return this.offSaleTime==null ? " ": dateFormat.format(this.offSaleTime);
     }
 
     public ProductExt getProductExt() {

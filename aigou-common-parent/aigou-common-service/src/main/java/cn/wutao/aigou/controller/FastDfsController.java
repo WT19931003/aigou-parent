@@ -43,7 +43,7 @@ public class FastDfsController {
      * 删除
      * @return
      */
-    @DeleteMapping("fastdfs")
+    @DeleteMapping("delfastdfs")
     public AjaxResult deleteFile(@RequestParam("filePath") String filePath){
             System.out.println(filePath);
         try {
